@@ -1,0 +1,23 @@
+{
+  "name": "ts-mars-rover",
+  "version": "0.0.1",
+  "description": "TypeScript Skeleton to play",
+  "main": "build/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "@stryker-mutator/typescript-checker": "^8.2.6",
+    "@stryker-mutator/vitest-runner": "^8.2.6",
+    "@vitest/coverage-v8": "^1.5.2",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.2"
+  },
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc --project .",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:mutants": "stryker run"
+  }
+}
